@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 /**
  * Created by athila on 23/06/15.
  */
-public class IntegerValidator extends Validator {
-    private static final String REGEX = "^[-+]?\\d+$";
+public class TwoDigitsIntegerValidator extends Validator {
+    private static final String REGEX = "^[-+]?\\d{1,2}$";
 
-    public IntegerValidator() {
+    public TwoDigitsIntegerValidator() {
         super(Pattern.compile(REGEX));
     }
 }

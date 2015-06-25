@@ -10,6 +10,15 @@
               android:paddingTop="@dimen/activity_vertical_margin"
               tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/calculator_title"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +27,7 @@
 
         <EditText
             android:id="@+id/sumOp1"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
             android:inputType="text"/>
 
@@ -30,13 +39,13 @@
 
         <EditText
             android:id="@+id/sumOp2"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
             android:inputType="text"/>
 
         <Button
             android:id="@+id/buttonSum"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text=" = "
             android:textSize="24sp"/>
@@ -46,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="240"
+            android:layout_marginLeft="@dimen/result_margin_left"
             android:textSize="24sp"/>
     </LinearLayout>
 
@@ -57,9 +67,9 @@
 
         <EditText
             android:id="@+id/subtractOp1"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,13 +79,13 @@
 
         <EditText
             android:id="@+id/subtractOp2"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <Button
             android:id="@+id/buttonSubtract"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text=" = "
             android:textSize="24sp"/>
@@ -85,6 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="240"
+            android:layout_marginLeft="@dimen/result_margin_left"
             android:textSize="24sp"/>
     </LinearLayout>
 
@@ -96,9 +107,9 @@
 
         <EditText
             android:id="@+id/multiplyOp1"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -108,13 +119,13 @@
 
         <EditText
             android:id="@+id/multiplyOp2"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <Button
             android:id="@+id/buttonMultiply"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text=" = "
             android:textSize="24sp"/>
@@ -124,6 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="240"
+            android:layout_marginLeft="@dimen/result_margin_left"
             android:textSize="24sp"/>
     </LinearLayout>
 
@@ -135,9 +147,9 @@
 
         <EditText
             android:id="@+id/divisionOp1"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -147,13 +159,13 @@
 
         <EditText
             android:id="@+id/divisionOp2"
-            android:layout_width="70dp"
+            android:layout_width="@dimen/edit_text_width"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
 
         <Button
             android:id="@+id/buttonDivision"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:text=" = "
             android:textSize="24sp"/>
@@ -163,6 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="240"
+            android:layout_marginLeft="@dimen/result_margin_left"
             android:textSize="24sp"/>
     </LinearLayout>
 
